@@ -1,0 +1,50 @@
+.text_detail {
+    width: 55%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: justify;
+
+    .up {
+        padding-bottom: 15px;
+        font-style: italic;
+        font-weight: lighter;
+
+        .author {
+            color: #660000;
+        }
+
+        .publication_date {
+            color: #FF6D6D;
+        }
+    }
+
+    .content {
+        line-height: 250%;
+    }
+
+    .references {
+        margin-top: 20px;
+        line-height: 250%;
+        margin-bottom: 20%;
+        
+        .title_reference {
+            font-size: 25px;
+            font-weight: bold;
+            color: #000846;
+        }
+
+        .content_reference {
+
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .text_detail {
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+        text-align: justify;
+    }
+}

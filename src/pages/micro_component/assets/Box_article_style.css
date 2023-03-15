@@ -1,0 +1,47 @@
+.box {
+  cursor: pointer;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
+  height: 60vh;
+  text-align: left;
+  transition: 0.5s;
+}
+.box .image_1 {
+  width: 100%;
+  overflow: hidden;
+}
+.box .image_1 img {
+  width: 100%;
+  height: 40vh;
+  transition: 0.5s;
+}
+.box .image_1 img:hover {
+  transform: rotate(10deg);
+  scale: 2;
+}
+.box .text {
+  margin: 10px;
+}
+.box .text .author {
+  color: rgb(0, 0, 0);
+  font-style: italic;
+}
+.box .text .titre {
+  color: #FF6D6D;
+}
+.box .text .little_description {
+  color: rgb(35, 35, 35);
+}
+
+.box:hover {
+  transform: scale(0.95);
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    margin: 20px;
+    width: 90vw;
+  }
+}/*# sourceMappingURL=Box_article_style.css.map */

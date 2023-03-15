@@ -1,0 +1,18 @@
+.adr_page {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  margin-bottom: 10px;
+}
+.adr_page * {
+  padding: 10px;
+}
+.adr_page .main {
+  background-color: #001140;
+  color: white;
+  margin-right: 2px;
+}
+.adr_page .main_2 {
+  color: rgb(10, 9, 9);
+  background-color: #C6C6C6;
+}/*# sourceMappingURL=Page_adress_style.css.map */

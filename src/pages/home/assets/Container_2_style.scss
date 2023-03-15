@@ -1,0 +1,28 @@
+.container_2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    padding-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80vw;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container_2 {
+        margin-top: 20%;
+        display: contents;
+        grid-template-columns: 100%;
+        width: 90vw;
+
+        .box {
+
+            margin: 20px;
+            width: 90vw;
+        }
+    }
+
+}

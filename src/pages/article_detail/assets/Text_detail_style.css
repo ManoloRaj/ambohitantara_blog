@@ -1,0 +1,38 @@
+.text_detail {
+  width: 55%;
+  margin: auto;
+  margin-top: 5%;
+  text-align: justify;
+}
+.text_detail .up {
+  padding-bottom: 15px;
+  font-style: italic;
+  font-weight: lighter;
+}
+.text_detail .up .author {
+  color: #660000;
+}
+.text_detail .up .publication_date {
+  color: #FF6D6D;
+}
+.text_detail .content {
+  line-height: 250%;
+}
+.text_detail .references {
+  margin-top: 20px;
+  line-height: 250%;
+  margin-bottom: 20%;
+}
+.text_detail .references .title_reference {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000846;
+}
+@media only screen and (max-width: 600px) {
+  .text_detail {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: justify;
+  }
+}/*# sourceMappingURL=Text_detail_style.css.map */

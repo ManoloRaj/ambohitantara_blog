@@ -1,0 +1,39 @@
+.title_detail {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.title_detail .title {
+  font-size: 30px;
+  color: #FF6D6D;
+  font-weight: bold;
+  text-align: left;
+  padding-right: 10%;
+}
+.title_detail .image_title {
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.title_detail .image_title * {
+  transition: 0.5s;
+}
+.title_detail .image_title .img {
+  scale: 1.5;
+  width: 100%;
+  width: 100%;
+}
+.title_detail .image_title .img :hover {
+  scale: 1.7;
+  transform: rotate(5deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .title_detail {
+    padding: 10%;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .title_detail .title {
+    padding-bottom: 10%;
+  }
+}/*# sourceMappingURL=Title_detail_style.css.map */
