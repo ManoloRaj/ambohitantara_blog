@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { tooltipClasses } from '@mui/material/Tooltip';
 import { styled } from '@mui/material/styles';
 import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 
 export function Navbar() {
 
@@ -79,6 +80,27 @@ export function Navbar() {
                 </Link>
 
             </div>
+
+            <div
+                className='connexion_add'
+                style={{
+                    transform : "translateY(60px)"
+                }}
+            >
+                <Link to="/add_article">
+                    <AppRegistrationIcon
+                        fontSize='large'
+                        style={{
+                            width: "50px",
+                            height: "50px",
+                            borderRadius: "100%"
+                        }} />
+
+                </Link>
+
+            </div>
+
+            
 
 
             <Outlet />

@@ -1,8 +1,21 @@
+import { useParams } from "react-router-dom";
 import { Page_adress } from "../micro_component/Page_adress";
 import "./assets/Article_detail_style.css";
 import { Container_3 } from "./Container_3";
+import { useEffect, useState } from "react";
+import { Article_rest } from "../../services/Article_rest";
 
 export function Article_detail() {
+
+    const params = useParams();
+    const [article, setArticle] = useState({})
+
+    useEffect(() => {
+        Article_rest.getOneArticle(params.id_article).then((result) => {
+            setArticle(result.data)
+        })
+    }, [params.id_article])
+
     return (
         <>
             <div className="article_detail">
@@ -12,45 +25,18 @@ export function Article_detail() {
                 />
 
                 <Container_3
-                    title="
-                    MAHITSIARIVO AVARABARY
-                    Zazamarolahy Village located 
-                    in South East 
-                    of Imerintsiatosika"
-                    
-                    author="Jaona Randrianandrasana and Manolo RAJAONAH"
 
-                    publication_date="January 2023"
+                    image={article.adresse_image_titre}
 
-                    publication_text="
-                    Created in January 2023, it is to Promote Malagasy culture and trades
-                    Madagascar is a vast island in Indian ocean. This BLOG is a platform to
-                    present all hide and seen aspect of Madagascar HISTORY, ANTHROPOLOGY
-                    TRADES, CUSTOMS, PHOTOS
-                    Created in January 2023, it is to Promote Malagasy culture and trades
-                    Madagascar is a vast island in Indian ocean. This BLOG is a platform to
-                    present all hide and seen aspect of Madagascar HISTORY, ANTHROPOLOGY
-                    TRADES, CUSTOMS, PHOTOS
-                    Created in January 2023, it is to Promote Malagasy culture and trades
-                    Madagascar is a vast island in Indian ocean. This BLOG is a platform to
-                    present all hide and seen aspect of Madagascar HISTORY, ANTHROPOLOGY
-                    TRADES, CUSTOMS, PHOTOS
-                    Created in January 2023, it is to Promote Malagasy culture and trades
-                    Madagascar is a vast island in Indian ocean. This BLOG is a platform to
-                    present all hide and seen aspect of Madagascar HISTORY, ANTHROPOLOGY
-                    TRADES, CUSTOMS, PHOTOS
-                    Created in January 2023, it is to Promote Malagasy culture and trades
-                    Madagascar is a vast island in Indian ocean. This BLOG is a platform to
-                    present all hide and seen aspect of Madagascar HISTORY, ANTHROPOLOGY
-                    TRADES, CUSTOMS, PHOTOS
-                    Created in January 2023, it is to Promote Malagasy culture and trades
-                    Madagascar is a vast island in Indian ocean. This BLOG is a platform to
-                    present all hide and seen aspect of Madagascar HISTORY, ANTHROPOLOGY
-                    TRADES, CUSTOMS, PHOTOS
-                    "
+                    title={article.title_article}
 
-                    reference="Imerintsiatosika Commune, District Arivonimamo ambanivohitra, 
-                    Antananarivo, Madagascar"
+                    author={article.name_user}
+
+                    publication_date={article.publication_date_article}
+
+                    publication_text={article.content_article}
+
+                    reference={article.reference}
                 />
             </div>
         </>

@@ -18,15 +18,13 @@
             transition: 0.5s; 
         }
         .img {
-            scale: 1.5;
             width: 100%;
             width: 100%;
             
         }
 
         .img :hover {
-            scale: 1.7;
-            transform: rotate(5deg);
+            scale: 1.2;
         }
     }
 }

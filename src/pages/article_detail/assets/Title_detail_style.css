@@ -18,13 +18,11 @@
   transition: 0.5s;
 }
 .title_detail .image_title .img {
-  scale: 1.5;
   width: 100%;
   width: 100%;
 }
 .title_detail .image_title .img :hover {
-  scale: 1.7;
-  transform: rotate(5deg);
+  scale: 1.2;
 }
 
 @media only screen and (max-width: 600px) {

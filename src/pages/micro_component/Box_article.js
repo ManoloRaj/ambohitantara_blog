@@ -16,7 +16,7 @@ export function Box_article(props) {
                         {props.author}
                     </div>
                     <div className="little_description">
-                        {props.description}
+                        {props.description} see more
                     </div>
                 </div>
 

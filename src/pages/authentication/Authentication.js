@@ -1,5 +1,6 @@
 import { Button, TextField } from "@mui/material";
 import "./assets/Authentication_style.css";
+import HowToRegIcon from '@mui/icons-material/HowToReg';
 
 export function Authentication() {
     return (
@@ -7,7 +8,9 @@ export function Authentication() {
             <div className='form_connexion'>
 
                 <div className='content'>
-
+                    <div className="titre">
+                        <HowToRegIcon fontSize="large"/>
+                    </div>
                     <TextField
                         className='input_connexion'
                         id="outlined-basic"
@@ -27,7 +30,7 @@ export function Authentication() {
                         variant='contained'
                         color="error"
                     >
-                        SignIn
+                        Log In
                     </Button>
 
                 </div>

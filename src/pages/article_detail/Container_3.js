@@ -6,6 +6,7 @@ export function Container_3(props) {
         <>
             <Title_detail
                 title={props.title}
+                image={props.image}
 
             />
 
