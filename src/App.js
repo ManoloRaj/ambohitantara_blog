@@ -6,7 +6,7 @@ import { Home } from './pages/home/Home';
 import { Article_detail } from './pages/article_detail/Article_detail';
 import { Authentication } from './pages/authentication/Authentication';
 import { User_profile } from './pages/backoffice/User_profile';
-import { Add_article } from './pages/backoffice/Add_article';
+import { Add_article } from './pages/backoffice/add_article';
 
 
 function App() {
