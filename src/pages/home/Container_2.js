@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 export function Container_2() {
 
     const [article_list, setArticle_list] = useState([]);
+
     useEffect(() => {
         Article_rest.articleList().then((result) => {
             setArticle_list(result.data);
@@ -20,7 +21,10 @@ export function Container_2() {
         <>
             <div className="container_2">
 
-                {article_list.map((result) => {
+                {
+                article_list !== [] &&
+                article_list !== undefined &&
+                article_list.map((result) => {
                     return (
                         <>
                             <Link to={"/article_detail/"+result.id_article}>

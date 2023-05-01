@@ -5,10 +5,12 @@ const api = axios.create({
     baseURL: Backend_url + `Article_controller_rest/`
 });
 
+
 export const Article_rest = {
 
     async articleList() {
         try {
+            console.log("Backend URL ----")
             const result = await api.get("articleList/");
 
             return result.data
@@ -21,10 +23,10 @@ export const Article_rest = {
     async getOneArticle(id_article) {
         try {
             const result = await api.post("getOneArticle/", {
-                id_article: id_article
+                id_article : id_article
             });
 
-            return result.data
+            return result
 
         } catch (error) {
             console.log(error)
