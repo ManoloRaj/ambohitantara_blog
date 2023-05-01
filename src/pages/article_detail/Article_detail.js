@@ -13,7 +13,7 @@ export function Article_detail() {
     useEffect(() => {
         Article_rest.getOneArticle(params.id_article).then((result) => {
             setArticle(result.data)
-            console.log("ETO NY MASO------", result)
+            console.log("ETO NY MASO------", result.data)
         })
     }, [params.id_article])
 
