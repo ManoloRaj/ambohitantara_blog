@@ -22,7 +22,6 @@ export function Container_2() {
             <div className="container_2">
 
                 {
-                article_list !== [] &&
                 article_list !== undefined &&
                 article_list.map((result) => {
                     return (
@@ -39,10 +38,8 @@ export function Container_2() {
                         </>
                     )
                 })}
-                Salut
 
-
-                {/* <Link to="article_detail">
+                <Link to="article_detail">
                     <Box_article
                         image={antsahadinta}
                         title="Antsahadinta"
@@ -50,7 +47,16 @@ export function Container_2() {
                         description="One of the 12 Sacred Hill, Antsahadinta still an alive place to visit."
                     />
 
-                </Link> */}
+                </Link>
+                <Link to="article_detail">
+                    <Box_article
+                        image={antsahadinta}
+                        title="Antsahadinta"
+                        author="By Manolo RAJAONAH and Jaona RANDRIANANDRASANA"
+                        description="One of the 12 Sacred Hill, Antsahadinta still an alive place to visit."
+                    />
+
+                </Link>
 
 
             </div>
